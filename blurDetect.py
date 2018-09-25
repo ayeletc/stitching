@@ -12,6 +12,7 @@ def variance_of_gaussian(image):
     gauss = cv2.GaussianBlur(gray, (blur_factor, blur_factor), 0)
     cv2.imshow("blur", gauss)
     cv2.waitKey(0)
+    
     return gauss.var()
 
 
